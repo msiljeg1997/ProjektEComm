@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BAzAlze9j1+gguWapmQzJ/U++GbpRp14+m46Enrr6tvodnvghslB4aE8yxHDHHd0vZM1bzFfLyXJu9E5NUK0lQ==",
+  "dgSpecHash": "UWVahKU6GwS6TFAHXEUlgz7CMRooXl6w1VKujdUFTsOL4edrzfXybt8Fk3kaNnBcFEhADUPgXXOXU69WCc0oeQ==",
   "success": true,
-  "projectFilePath": "/Users/matijasiljeg/Desktop/eswatini/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/Users/matijasiljeg/Desktop/ecomm-main/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/matijasiljeg/.nuget/packages/microsoft.data.sqlite.core/7.0.3/microsoft.data.sqlite.core.7.0.3.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/microsoft.entityframeworkcore/7.0.3/microsoft.entityframeworkcore.7.0.3.nupkg.sha512",

@@ -10,3 +10,15 @@
 /Users/matijasiljeg/Desktop/eswatini/Core/obj/Debug/net7.0/refint/Core.dll
 /Users/matijasiljeg/Desktop/eswatini/Core/obj/Debug/net7.0/Core.pdb
 /Users/matijasiljeg/Desktop/eswatini/Core/obj/Debug/net7.0/ref/Core.dll
+/Users/matijasiljeg/Desktop/ecomm-main/Core/bin/Debug/net7.0/Core.deps.json
+/Users/matijasiljeg/Desktop/ecomm-main/Core/bin/Debug/net7.0/Core.dll
+/Users/matijasiljeg/Desktop/ecomm-main/Core/bin/Debug/net7.0/Core.pdb
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/Core.csproj.AssemblyReference.cache
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/Core.AssemblyInfoInputs.cache
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/Core.AssemblyInfo.cs
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/Core.csproj.CoreCompileInputs.cache
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/Core.dll
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/refint/Core.dll
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/Core.pdb
+/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/Debug/net7.0/ref/Core.dll

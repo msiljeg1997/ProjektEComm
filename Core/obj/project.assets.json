@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/matijasiljeg/Desktop/eswatini/Core/Core.csproj",
+      "projectUniqueName": "/Users/matijasiljeg/Desktop/ecomm-main/Core/Core.csproj",
       "projectName": "Core",
-      "projectPath": "/Users/matijasiljeg/Desktop/eswatini/Core/Core.csproj",
+      "projectPath": "/Users/matijasiljeg/Desktop/ecomm-main/Core/Core.csproj",
       "packagesPath": "/Users/matijasiljeg/.nuget/packages/",
-      "outputPath": "/Users/matijasiljeg/Desktop/eswatini/Core/obj/",
+      "outputPath": "/Users/matijasiljeg/Desktop/ecomm-main/Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/matijasiljeg/.nuget/NuGet/NuGet.Config"
