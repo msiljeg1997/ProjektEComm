@@ -5,6 +5,7 @@ import { iProduct } from '../shared/models/iProduct';
 import { iBrand } from '../shared/models/iBrand';
 import { iType } from '../shared/models/iType';
 import { ShopParams } from '../shared/models/shopParams';
+import { Serializer } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,7 @@ export class ShopService {
     params = params.append('sort', ShopParams.sort);
     params = params.append('pageIndex', ShopParams.pageNumber);
     params = params.append('pageSize', ShopParams.pageSize);
+    if (ShopParams.search) params = params.append('search', ShopParams.search);
 
     return this.http.get<iPagination<iProduct[]>>(this.baseUrl + 'products', { params });
   }
