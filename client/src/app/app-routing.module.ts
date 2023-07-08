@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductDetailsComponent } from './shop/product-details/product-details.component';
+import { ShopModule } from './shop/shop.module';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'shop', component: ShopComponent},
-  {path: 'shop/:id', component: ProductDetailsComponent},
+  {path:'shop', loadChildren: () => import('./shop/shop.module'). then(m => m.ShopModule)},
   {path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 

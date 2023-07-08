@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http'; 
 import { ShopModule } from './shop/shop.module';
-import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { HomeModule } from './home/home.module';
     BrowserAnimationsModule,
     CoreModule,
     HttpClientModule,
-    ShopModule,
     HomeModule
   ],
   declarations: [
