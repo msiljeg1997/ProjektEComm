@@ -5,7 +5,6 @@ import { iProduct } from '../shared/models/iProduct';
 import { iBrand } from '../shared/models/iBrand';
 import { iType } from '../shared/models/iType';
 import { ShopParams } from '../shared/models/shopParams';
-import { Serializer } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +14,12 @@ export class ShopService {
 
   constructor(private http: HttpClient) { }
 
+
+
+
+  getProduct(id: number) {
+    return this.http.get<iProduct>(this.baseUrl + 'products/' + id);
+  }
 
   getProducts(ShopParams: ShopParams) {
     let params = new HttpParams();
