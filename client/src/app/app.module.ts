@@ -4,9 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
-import { HttpClientModule } from '@angular/common/http'; 
-import { ShopModule } from './shop/shop.module';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http'; 
 import { HomeModule } from './home/home.module';
+import { TestErrorsComponent } from './test-errors/test-errors.component';
+import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 
 @NgModule({
   imports: [
@@ -18,9 +19,12 @@ import { HomeModule } from './home/home.module';
     HomeModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    TestErrorsComponent
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
