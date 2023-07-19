@@ -6,7 +6,7 @@
         {{product.name}}
       </h6>
     </a>
-    <span class="mb-2 ps-3 mt-auto">{{product.price | currency}}</span>
+    <span class="mb-2 ps-3 mt-auto">{{product.price | currency:'EUR'}}</span>
     <div class="btn-group ">
       <button class="btn btn-outline-secondary fa fa-shopping-cart me-2"></button>
       <button routerLink="/shop/{{product.id}}" class="btn btn-outline-secondary">View</button>

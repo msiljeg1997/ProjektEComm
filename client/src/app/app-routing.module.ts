@@ -7,9 +7,10 @@ import { ShopModule } from './shop/shop.module';
 import { TestErrorsComponent } from './test-errors/test-errors.component';
 import { NotFoundComponent } from './core/not-found/not-found.component';
 import { ServerErrorComponent } from './core/server-error/server-error.component';
+import { BreadcrumbModule } from 'xng-breadcrumb';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', component: HomeComponent, data: {breadcrumb: 'Home'}},
   {path: 'test-error', component: TestErrorsComponent},
   {path: 'not-found', component: NotFoundComponent},
   {path: 'server-error', component: ServerErrorComponent},

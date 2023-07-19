@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { iProduct } from '../../shared/models/iProduct';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-product-item',
@@ -8,4 +9,5 @@ import { iProduct } from '../../shared/models/iProduct';
 })
 export class ProductItemComponent {
 @Input() product?: iProduct;
+
 }
