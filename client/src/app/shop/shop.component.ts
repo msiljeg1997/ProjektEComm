@@ -1,9 +1,10 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { iProduct } from '../shared/models/iProduct';
 import { ShopService } from './shop.service';
 import { iBrand } from '../shared/models/iBrand';
 import { iType } from '../shared/models/iType';
 import { ShopParams } from '../shared/models/shopParams';
+import { BusyService } from '../core/services/busy.service';
 
 @Component({
   selector: 'app-shop',
@@ -22,16 +23,19 @@ export class ShopComponent implements OnInit {
     { name: 'Price: Low to high', value: 'priceAsc' },
   ];
   totalCount = 0;
+  @Output() shopLoadingFinished = new EventEmitter<boolean>();
 
 
 
-
-  constructor(private shopService: ShopService) { }
+  constructor(private shopService: ShopService, private busyService: BusyService) { }
 
   ngOnInit(): void {
     this.getProducts();
     this.getBrands();
     this.getTypes();
+    this.busyService.loadingFinished.subscribe(() => {
+      this.shopLoadingFinished.emit(true);
+    });
   }
   
 
