@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UWVahKU6GwS6TFAHXEUlgz7CMRooXl6w1VKujdUFTsOL4edrzfXybt8Fk3kaNnBcFEhADUPgXXOXU69WCc0oeQ==",
+  "dgSpecHash": "cMivqs/pVEPIFVsCPbuIVDq65E/IT99Hfc1Va5tROqlPLAlY7BYlMiFK9RWDlz+WzfYLbQyiOIkOQ2n1UoEz+g==",
   "success": true,
   "projectFilePath": "/Users/matijasiljeg/Desktop/ecomm-main/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -21,10 +21,13 @@
     "/Users/matijasiljeg/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/matijasiljeg/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.4/sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/sqlitepclraw.core/2.1.4/sqlitepclraw.core.2.1.4.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.4/sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.4/sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
+    "/Users/matijasiljeg/.nuget/packages/stackexchange.redis/2.6.122/stackexchange.redis.2.6.122.nupkg.sha512",
+    "/Users/matijasiljeg/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"

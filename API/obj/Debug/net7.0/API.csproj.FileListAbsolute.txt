@@ -150,3 +150,5 @@
 /Users/matijasiljeg/Desktop/ecomm-main/API/obj/Debug/net7.0/API.pdb
 /Users/matijasiljeg/Desktop/ecomm-main/API/obj/Debug/net7.0/API.genruntimeconfig.cache
 /Users/matijasiljeg/Desktop/ecomm-main/API/obj/Debug/net7.0/ref/API.dll
+/Users/matijasiljeg/Desktop/ecomm-main/API/bin/Debug/net7.0/Pipelines.Sockets.Unofficial.dll
+/Users/matijasiljeg/Desktop/ecomm-main/API/bin/Debug/net7.0/StackExchange.Redis.dll

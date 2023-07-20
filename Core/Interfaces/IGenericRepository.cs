@@ -1,5 +1,5 @@
 using Core.Entities;
-using Core.Speccifications;
+using Core.Specifications;
 
 namespace Core.Interfaces
 {
