@@ -9,3 +9,4 @@
     productBrand: string
   }
   
+  export class iProduct implements iProduct{}
