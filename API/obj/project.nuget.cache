@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Jyg1BauFiY4mwCvbb/Risn2exfimq3yKYyFDNjvAQ1GteGHuRwWod/09NLjXamNoUakg/Pb+EkKnQBFq0P1dQ==",
+  "dgSpecHash": "hn3+EA2fF0DbMjkI1EiwKey8jGltQINnG/SagHl8ojxyZKrDeenSAMOe34kksHQSHDog/XbipvKG4t3/xLiCbQ==",
   "success": true,
-  "projectFilePath": "/Users/matijasiljeg/Desktop/ecomm-main/API/API.csproj",
+  "projectFilePath": "/Users/matijasiljeg/Desktop/Web Development/ecomm-main/API/API.csproj",
   "expectedPackageFiles": [
     "/Users/matijasiljeg/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
     "/Users/matijasiljeg/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

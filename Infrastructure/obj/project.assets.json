@@ -1276,11 +1276,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/matijasiljeg/Desktop/ecomm-main/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/Users/matijasiljeg/Desktop/Web Development/ecomm-main/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/Users/matijasiljeg/Desktop/ecomm-main/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/Users/matijasiljeg/Desktop/Web Development/ecomm-main/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/Users/matijasiljeg/.nuget/packages/",
-      "outputPath": "/Users/matijasiljeg/Desktop/ecomm-main/Infrastructure/obj/",
+      "outputPath": "/Users/matijasiljeg/Desktop/Web Development/ecomm-main/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/matijasiljeg/.nuget/NuGet/NuGet.Config"
@@ -1295,8 +1295,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/matijasiljeg/Desktop/ecomm-main/Core/Core.csproj": {
-              "projectPath": "/Users/matijasiljeg/Desktop/ecomm-main/Core/Core.csproj"
+            "/Users/matijasiljeg/Desktop/Web Development/ecomm-main/Core/Core.csproj": {
+              "projectPath": "/Users/matijasiljeg/Desktop/Web Development/ecomm-main/Core/Core.csproj"
             }
           }
         }
