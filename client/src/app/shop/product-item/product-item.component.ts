@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { iProduct } from '../../shared/models/iProduct';
 import { CommonModule } from '@angular/common';
 import { BasketService } from 'src/app/basket/basket.service';
+import { iBasket, iBasketItem } from 'src/app/shared/models/iBasket';
 
 @Component({
   selector: 'app-product-item',
@@ -23,8 +24,6 @@ addItemToBasket(){
 handleButtonClick(event: MouseEvent) {
   console.log(event);
 }
-
-
 
 
 }
