@@ -32,7 +32,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
-         
+
             var user = await _userManager.FindByEmailFromClaimsPrinciple(User);
 
             return new UserDto
@@ -58,6 +58,20 @@ namespace API.Controllers
             var user = await _userManager.FindUserByClaimsPrincipleWithAdress(User);
 
             return _mapper.Map<Address, AddressDto>(user.Address);
+        }
+
+        [Authorize]
+        [HttpPut("address")]
+        public async Task<ActionResult<AddressDto>> UpdateUserAddress(AddressDto address)
+        {
+            var user =  await _userManager.FindUserByClaimsPrincipleWithAdress(HttpContext.User);
+
+            user.Address = _mapper.Map<AddressDto, Address>(address);
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if(result.Succeeded) return Ok(_mapper.Map<Address, AddressDto>(user.Address));
+            return BadRequest("Problems updating the user");
         }
 
         [HttpPost("login")]
