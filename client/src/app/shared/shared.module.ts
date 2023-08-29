@@ -7,6 +7,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { OrderedTotalsComponent } from './ordered-totals/ordered-totals.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TextInputComponent } from './components/text-input/text-input.component';
 
 
 
@@ -14,7 +15,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
   declarations: [
     PagingHeaderComponent,
     PagerComponent,
-    OrderedTotalsComponent
+    OrderedTotalsComponent,
+    TextInputComponent
   ],
   imports: [
     CommonModule,
