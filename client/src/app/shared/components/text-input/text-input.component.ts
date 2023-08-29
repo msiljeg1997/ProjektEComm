@@ -16,7 +16,7 @@ export class TextInputComponent implements ControlValueAccessor {
     this.controlDir.valueAccessor = this;
   }
 
-  writeValue(obj: any): void {
+ writeValue(obj: any): void {
   }
   registerOnChange(fn: any): void {
   }
