@@ -1,14 +1,14 @@
 export interface iUser {
-    Email: string;
-    DisplayName: string;
-    Token: string;
+    email: string;
+    displayName: string;
+    token: string;
 }
 
 export interface iAddress {
-    FirstName: string;
-    LastName: string;
-    Street: string;
-    City: string;
-    State: string;
-    ZipCode: string;
+    firstName: string;
+    lastName: string;
+    street: string;
+    city: string;
+    state: string;
+    zipCode: string;
 }
