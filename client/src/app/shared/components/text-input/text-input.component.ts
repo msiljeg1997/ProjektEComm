@@ -28,7 +28,7 @@ export class TextInputComponent implements ControlValueAccessor {
   setDisabledState?(isDisabled: boolean): void {
     throw new Error('Method not implemented.');
   }
-get cotrol(): FormControl {
+get control(): FormControl {
   return this.controlDir.control as FormControl
 }
 
