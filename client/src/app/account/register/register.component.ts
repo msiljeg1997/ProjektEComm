@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { AbstractControl, AsyncValidator, AsyncValidatorFn, FormBuilder, Validators } from '@angular/forms';
 import { AccountService } from '../account.service';
 import { Router } from '@angular/router';
+import { debounceTime, finalize, map, switchMap, take } from 'rxjs';
 
 @Component({
   selector: 'app-register',
@@ -9,22 +10,38 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-errors: string [] | null = null;
-constructor(private fb: FormBuilder, private accountService: AccountService, private router: Router){}
+  errors: string[] | null = null;
+  constructor(private fb: FormBuilder, private accountService: AccountService, private router: Router) { }
 
 
-complexPassword = "(?=^.{6,10}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"
-registerForm = this.fb.group({
-  displayName: ['', Validators.required],    
-  Email: ['', [Validators.required, Validators.email]],
-  Password: ['', [Validators.required, Validators.pattern(this.complexPassword)]],
-})
-
-OnSubmit(){
-  this.accountService.register(this.registerForm.value).subscribe({
-    next: () => this.router.navigateByUrl('/shop'),
-    error: error => this.errors = this.errors = error.errors
+  complexPassword = "(?=^.{6,10}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$"
+  registerForm = this.fb.group({
+    displayName: ['', Validators.required],
+    Email: ['', [Validators.required, Validators.email], [this.validateEmailNotToken()]],
+    Password: ['', [Validators.required, Validators.pattern(this.complexPassword)]],
   })
-}
+
+  OnSubmit() {
+    this.accountService.register(this.registerForm.value).subscribe({
+      next: () => this.router.navigateByUrl('/shop'),
+      error: error => this.errors = this.errors = error.errors
+    })
+  }
+
+  validateEmailNotToken(): AsyncValidatorFn {
+    return (control: AbstractControl) => {
+      return control.valueChanges.pipe(
+        debounceTime(1000),
+        take(1),
+        switchMap(() => {
+          return this.accountService.checkEmailExists(control.value).pipe(
+            map(result => result ? { emailExists: true } : null),
+            finalize(() => control.markAsTouched())
+          )
+        })
+      )
+
+    }
+  }
 
 }
