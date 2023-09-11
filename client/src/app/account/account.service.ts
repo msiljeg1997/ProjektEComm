@@ -1,29 +1,40 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, map } from 'rxjs';
+import {  ReplaySubject, map, of } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { iUser } from '../shared/models/iUser';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AccountService {
   baseUrl = environment.apiUrl;
-  private currentUserSource = new BehaviorSubject<iUser | null>(null);
+  private currentUserSource = new ReplaySubject<iUser | null>(1);
   currentUser$ = this.currentUserSource.asObservable();
 
   constructor(private http: HttpClient, private router: Router) { }
 
-  loadCurrentUser(token: string) {
+  loadCurrentUser(token: string | null) {
+    if (token === null) {
+      this.currentUserSource.next(null);
+      return of(null);
+    }
+
     let headers = new HttpHeaders();
     //pazi na backticks 
     headers = headers.set('Authorization', `Bearer ${token}`);
 
     return this.http.get<iUser>(this.baseUrl + 'account', { headers }).pipe(
       map(user => {
-        localStorage.setItem('Token', user.token);
-        this.currentUserSource.next(user);
+        if (user) {
+          localStorage.setItem('Token', user.token);
+          this.currentUserSource.next(user); 
+          return user;
+        } else {
+          return null
+        }
       })
     )
 
